@@ -1,163 +1,62 @@
-# React
+# Node Craft Workflow Builder
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+## Project Info
 
-## 🚀 Features
+A powerful **visual workflow builder** inspired by [n8n](https://n8n.io), built with React, TypeScript, and modern web technologies.
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+## How Can I Edit This Code?
 
-## 📋 Prerequisites
+### Using your preferred IDE
 
-- Node.js (v14.x or higher)
-- npm or yarn
+Clone this repository and make changes locally using your IDE of choice.
 
-## 🛠️ Installation
+Requirements:
+- Node.js & npm installed – [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
-
-## 📁 Project Structure
-
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
-
-## 🧩 Adding Routes
-
-To add new routes to the application, update the `Routes.jsx` file:
-
-```jsx
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
-
-const ProjectRoutes = () => {
-  let element = useRoutes([
-    { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
-    // Add more routes as needed
-  ]);
-
-  return element;
-};
-```
-
-## 🎨 Styling
-
-This project uses Tailwind CSS for styling. The configuration includes:
-
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
-
-## 📱 Responsive Design
-
-The app is built with responsive design using Tailwind CSS breakpoints.
+Steps:
 
 
-## 📦 Deployment
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-Build the application for production:
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-```bash
+# Step 3: Install the necessary dependencies.
+npm i
+
+# Step 4: Start the development server with auto-reloading and instant preview.
+npm run dev
+
+**Edit a file directly in GitHub**
+
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
+
+**Use GitHub Codespaces**
+
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
+
+## What technologies are used for this project?
+
+This project is built with:
+
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
+
+## How can I deploy this project?
+
+You can deploy this project to any static hosting service like Vercel, Netlify, or GitHub Pages.
+
+To build for production:
+```sh
 npm run build
 ```
-
-## 🙏 Acknowledgments
-
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
-
-Built with ❤️ on Rocket.new
-
----
-
-# Angular Workflow Builder
-
-A visual workflow builder app built with Angular, ngx-graph, and Tailwind CSS.
-
-## Features
-- Node-based workflow canvas (ngx-graph)
-- Node palette (add nodes)
-- Node inspector panel
-- Stats card (nodes, connections, mode)
-- Modern UI with Tailwind CSS
-
-## Getting Started
-
-### 1. Install dependencies
-```
-npm install
-```
-
-### 2. Set up Tailwind CSS
-If not already set up, run:
-```
-npx tailwindcss init
-```
-Edit `tailwind.config.js` and set:
-```
-module.exports = {
-  content: [
-    './src/**/*.{html,ts}',
-  ],
-  theme: {
-    extend: {},
-  },
-  plugins: [],
-}
-```
-
-### 3. Run the development server
-```
-npm start
-```
-
-The app will be available at `http://localhost:4200`.
-
----
-
-## Project Structure
-- `src/app/initial-workflow.ts` — Initial nodes and edges
-- `src/app/workflow-builder/` — Main components
-- `src/styles.css` — Tailwind CSS entry
-
-## Notes
-- Uses only open-source Angular libraries
-- You can customize node types and UI as needed
